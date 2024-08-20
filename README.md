@@ -32,10 +32,10 @@ iface lo inet loopback
 
 auto ens18
 iface ens18 inet static
-        address 192.168.1.150
+        address 192.168.X.XX
         netmask 255.255.255.0
-        gateway 192.168.1.199
-        dns-nameservers 192.168.1.199 8.8.8.8
+        gateway 192.168.X.XX
+        dns-nameservers 192.168.X.XX 8.8.8.8
         
 ---------------FIM-------------------------------
 
