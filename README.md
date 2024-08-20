@@ -14,9 +14,12 @@ deb-src http://deb.debian.org/debian-security/ bookworm-security main non-free-f
 deb http://deb.debian.org/debian bookworm-updates main non-free-firmware
 deb-src http://deb.debian.org/debian bookworm-updates main non-free-firmware
 
-
 IP STATIC
 nano /etc/network/interfaces
+
+Arquivo de Exemplo:
+
+---------INICIO------------------------
 
 # This file describes the network interfaces available on your system
 # and how to activate them. For more information, see interfaces(5).
@@ -33,7 +36,8 @@ iface ens18 inet static
         netmask 255.255.255.0
         gateway 192.168.1.199
         dns-nameservers 192.168.1.199 8.8.8.8
-
+        
+---------------FIM-------------------------------
 
 HABILITAR SSH ROOT
 nano /etc/ssh/sshd_config
